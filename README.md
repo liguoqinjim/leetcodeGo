@@ -1,4 +1,4 @@
-# leetcodeGo [![Build Status](https://travis-ci.org/liguoqinjim/leetcodeGo.svg?branch=master)](https://travis-ci.org/liguoqinjim/leetcodeGo)
+# leetcodeGo [![Build Status](https://travis-ci.org/liguoqinjim/leetcodeGo.svg?branch=master)](https://travis-ci.org/liguoqinjim/leetcodeGo)[![codecov](https://codecov.io/gh/liguoqinjim/leetcodeGo/branch/master/graph/badge.svg)](https://codecov.io/gh/liguoqinjim/leetcodeGo)
 leetcode solution in Golang
 
 暂时按照每个题目一个文件夹的格式
