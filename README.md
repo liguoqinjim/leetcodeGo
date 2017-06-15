@@ -9,6 +9,7 @@ sample都是参考别人的解
 |实验|简介|
 |---|---|
 |lab001|Two Sum|
+|lab007|Reverse Integer|
 
 ## Todo
 1. 这个库的代码要都写上测试用例
