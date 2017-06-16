@@ -21,3 +21,12 @@ func TestSearchInsert(t *testing.T) {
 		}
 	}
 }
+
+func TestSearchInsert2(t *testing.T) {
+	for _, c := range cases {
+		r := searchInsert2(c.nums, c.target)
+		if r != c.result {
+			t.Errorf("searchInsert2(%v,%d) = %d,want %d", c.nums, c.target, r, c.result)
+		}
+	}
+}
