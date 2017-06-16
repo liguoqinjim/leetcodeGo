@@ -25,3 +25,12 @@ func TestReverse(t *testing.T) {
 		}
 	}
 }
+
+func TestReverse2(t *testing.T) {
+	for _, c := range cases {
+		r := reverse2(c.x)
+		if r != c.result {
+			t.Errorf("Reverse2(%d) = %d,want %d", c.x, r, c.result)
+		}
+	}
+}
