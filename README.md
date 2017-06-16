@@ -10,6 +10,7 @@ sample都是参考别人的解
 |---|---|
 |lab001|Two Sum|
 |lab007|Reverse Integer|
+|lab035|Search Insert Position|
 
 ## Todo
 1. 这个库的代码要都写上测试用例
