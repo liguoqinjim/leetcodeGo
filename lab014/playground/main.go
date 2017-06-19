@@ -1,11 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 	strs := []string{"abc", "abdc", "abd", "ab"}
 	//strs := []string{"abc", "abdc", "abd"}
-	fmt.Println(longestCommonPrefix(strs))
+	//fmt.Println(longestCommonPrefix(strs))
+	fmt.Println(longestCommonPrefix2(strs))
 }
 
 func longestCommonPrefix(strs []string) string {
@@ -35,4 +39,20 @@ func longestCommonPrefix(strs []string) string {
 	}
 
 	return strs[0][:n]
+}
+
+func longestCommonPrefix2(strs []string) string {
+	fmt.Println(222)
+	if strs == nil || len(strs) == 0 {
+		return ""
+	}
+	pre := strs[0]
+	fmt.Println("pre1=", pre)
+	for _, v := range strs {
+		for !strings.HasPrefix(v, pre) {
+			pre = pre[:len(pre)-1]
+			fmt.Println("pre2=", pre)
+		}
+	}
+	return pre
 }

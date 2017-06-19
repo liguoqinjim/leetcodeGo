@@ -20,3 +20,12 @@ func TestLongestCommonPrefix(t *testing.T) {
 		}
 	}
 }
+
+func TestLongestCommonPrefix2(t *testing.T) {
+	for _, c := range cases {
+		r := longestCommonPrefix2(c.in)
+		if r != c.result {
+			t.Errorf("longestCommonPrefix(%v) == %s,want %s", c.in, r, c.result)
+		}
+	}
+}
