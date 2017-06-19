@@ -10,6 +10,7 @@ sample都是参考别人的解
 |---|---|
 |lab001|Two Sum|
 |lab007|Reverse Integer|
+|lab014|Longest Common Prefix|
 |lab035|Search Insert Position|
 
 ## Todo
