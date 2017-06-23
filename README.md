@@ -11,6 +11,7 @@ sample都是参考别人的解
 |lab001|Two Sum|
 |lab007|Reverse Integer|
 |lab008|String to Integer (atoi)|
+|lab009|Palindrome Number|
 |lab014|Longest Common Prefix|
 |lab020|Valid Parentheses|
 |lab035|Search Insert Position|
