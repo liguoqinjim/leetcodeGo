@@ -19,6 +19,7 @@ var cases = []struct {
 	{"  -0012a42", -12},
 	{"2147483648", 2147483647},
 	{"-2147483648", -2147483648},
+	{"-2147483647", -2147483647},
 	{"123  456", 123},
 	{"9223372036854775809", 2147483647},
 	{"   -1123u3761867", -1123},
@@ -30,6 +31,15 @@ func TestMyAtoi(t *testing.T) {
 		r := myAtoi(c.s)
 		if r != c.result {
 			t.Errorf("myAtoi(%s) = %d,want %d", c.s, r, c.result)
+		}
+	}
+}
+
+func TestMyAtoi2(t *testing.T) {
+	for _, c := range cases {
+		r := myAtoi2(c.s)
+		if r != c.result {
+			t.Errorf("myAtoi2(%s) = %d,want %d", c.s, r, c.result)
 		}
 	}
 }
