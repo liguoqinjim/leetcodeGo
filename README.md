@@ -14,6 +14,7 @@ sample都是参考别人的解
 |lab009|Palindrome Number|
 |lab014|Longest Common Prefix|
 |lab020|Valid Parentheses|
+|lab021|Merge Two Sorted Lists|
 |lab035|Search Insert Position|
 
 ## Todo

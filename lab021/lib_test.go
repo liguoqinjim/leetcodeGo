@@ -23,3 +23,12 @@ func TestMergeTwoLists(t *testing.T) {
 		}
 	}
 }
+
+func TestMergeTwoLists2(t *testing.T) {
+	for _, c := range cases {
+		r := mergeTwoLists2(c.l1, c.l2)
+		if !r.Equal(c.result) {
+			t.Errorf("MergeTwoList2([%s],[%s]) = [%s],want [%s]", c.l1.Print(), c.l2.Print(), r.Print(), c.result.Print())
+		}
+	}
+}
