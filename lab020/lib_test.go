@@ -17,7 +17,7 @@ func TestIsValid(t *testing.T) {
 	for _, c := range cases {
 		r := isValid(c.s)
 		if r != c.result {
-			t.Errorf("isValid(%s) = %t,want %t", c.result, r, c.result)
+			t.Errorf("isValid(%t) = %t,want %t", c.result, r, c.result)
 		}
 	}
 }
