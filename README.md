@@ -6,9 +6,9 @@ leetcode solution in Golang
 ## 目录
 sample都是参考别人的解
 
-|实验|简介|
-|---|---|
-|lab001|Two Sum|
+|实验|简介|说明|
+|---|---|---|
+|lab0001|Two Sum|
 |lab007|Reverse Integer|
 |lab008|String to Integer (atoi)|
 |lab009|Palindrome Number|
