@@ -1,5 +1,19 @@
 package lib
 
+func twoSum(nums []int, target int) []int {
+	as := make([]int, 2)
+	for i := 0; i < len(nums); i++ {
+		for j := i + 1; j < len(nums); j++ {
+			if nums[i]+nums[j] == target {
+				as[0] = i
+				as[1] = j
+			}
+		}
+	}
+
+	return as
+}
+
 //时间复杂度是O(n)
 func twoSum2(nums []int, target int) []int {
 	r := make([]int, 2)
@@ -8,7 +22,7 @@ func twoSum2(nums []int, target int) []int {
 		if value, ok := result[target-v]; ok {
 			r[0] = value
 			r[1] = n
-			return r
+			break
 		}
 		result[v] = n
 	}
