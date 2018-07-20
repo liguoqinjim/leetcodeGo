@@ -20,3 +20,4 @@ sample都是参考别人的解
 ## Todo
 1. 这个库的代码要都写上测试用例
 2. 用travis ci来做测试
+3. 注释sample下面的都是solution里面的一些解法

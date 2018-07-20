@@ -1,4 +1,4 @@
-package lab007
+package lab0007
 
 import (
 	"testing"

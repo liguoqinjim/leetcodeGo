@@ -11,5 +11,4 @@
 参考算法用的是相减来查看有没有匹配的值
 
 #### 参考资料
-1. https://leetcode.com/problems/two-sum/#/description
-2. https://discuss.leetcode.com/topic/2447/accepted-java-o-n-solution
+ - https://discuss.leetcode.com/topic/2447/accepted-java-o-n-solution
