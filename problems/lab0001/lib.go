@@ -14,6 +14,8 @@ func twoSum(nums []int, target int) []int {
 	return as
 }
 
+//sample
+
 //时间复杂度是O(n)
 func twoSum2(nums []int, target int) []int {
 	r := make([]int, 2)

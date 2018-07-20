@@ -9,7 +9,7 @@ sample都是参考别人的解
 |实验|简介|说明|
 |---|---|---|
 |lab0001|Two Sum|
-|lab007|Reverse Integer|
+|lab0007|Reverse Integer|
 |lab008|String to Integer (atoi)|
 |lab009|Palindrome Number|
 |lab014|Longest Common Prefix|
