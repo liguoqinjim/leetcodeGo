@@ -15,7 +15,7 @@ sample都是参考别人的解
 |lab014|Longest Common Prefix|
 |lab020|Valid Parentheses|
 |lab021|Merge Two Sorted Lists|
-|lab035|Search Insert Position|
+|lab0035|Search Insert Position|
 
 ## Todo
 1. 这个库的代码要都写上测试用例
