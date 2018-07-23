@@ -1,9 +1,10 @@
-package lab020
+package lab0020
 
 func isValid(s string) bool { //这个解法用到了acsii值
 	if len(s) == 0 {
 		return true
 	}
+
 	left := make([]int, 1)
 	left[0] = int(s[0])
 	for i := 1; i < len(s); i++ {
@@ -18,6 +19,7 @@ func isValid(s string) bool { //这个解法用到了acsii值
 			left = left[:len(left)-1]
 		}
 	}
+
 	if len(left) == 0 {
 		return true
 	} else {

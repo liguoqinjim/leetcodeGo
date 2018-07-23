@@ -13,7 +13,7 @@ sample都是参考别人的解
 |lab008|String to Integer (atoi)|
 |lab009|Palindrome Number|
 |lab0014|Longest Common Prefix|
-|lab020|Valid Parentheses|
+|lab0020|Valid Parentheses|
 |lab021|Merge Two Sorted Lists|
 |lab0035|Search Insert Position|
 
