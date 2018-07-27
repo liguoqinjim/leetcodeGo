@@ -1,4 +1,4 @@
-package lab021
+package lab0021
 
 import "fmt"
 
@@ -40,6 +40,29 @@ func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 	return l
 }
 
+//sample
+//递归解法
+func mergeTwoLists2(l1 *ListNode, l2 *ListNode) *ListNode {
+	if l1 == nil {
+		return l2
+	}
+	if l2 == nil {
+		return l1
+	}
+
+	var head = &ListNode{}
+	if l1.Val < l2.Val {
+		head = l1
+		head.Next = mergeTwoLists2(l1.Next, l2)
+	} else {
+		head = l2
+		head.Next = mergeTwoLists2(l1, l2.Next)
+	}
+
+	return head
+}
+
+//测试里面用到的方法
 func (l *ListNode) Print() string {
 	s := ""
 	for next := l; next != nil; {

@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+)
 
 type ListNode struct {
 	Val  int
@@ -9,9 +12,10 @@ type ListNode struct {
 
 func main() {
 	l1 := &ListNode{1, &ListNode{2, &ListNode{3, nil}}}
-	l2 := &ListNode{4, &ListNode{5, &ListNode{6, nil}}}
+	l2 := &ListNode{1, &ListNode{3, &ListNode{4, nil}}}
 
-	l := mergeTwoLists(l1, l2)
+	l := mergeTwoLists2(l1, l2)
+	log.Printf("%s",l.Print())
 
 	//fmt.Println("\n\nnode=")
 	//for node := l; node != nil; {
@@ -19,13 +23,13 @@ func main() {
 	//	node = node.Next
 	//}
 
-	s := l.Print()
-	fmt.Println(s)
-
-	fmt.Println("\n\n\n测试相等")
-	l3 := &ListNode{1, &ListNode{2, &ListNode{3, nil}}}
-	l4 := &ListNode{1, &ListNode{2, &ListNode{3, nil}}}
-	fmt.Println(l3.Equal(l4))
+	//s := l.Print()
+	//fmt.Println(s)
+	//
+	//fmt.Println("\n\n\n测试相等")
+	//l3 := &ListNode{1, &ListNode{2, &ListNode{3, nil}}}
+	//l4 := &ListNode{1, &ListNode{2, &ListNode{3, nil}}}
+	//fmt.Println(l3.Equal(l4))
 }
 
 func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
@@ -62,6 +66,33 @@ func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 	}
 
 	return l
+}
+
+//递归解法
+func mergeTwoLists2(l1 *ListNode, l2 *ListNode) *ListNode {
+	if l1 == nil {
+		log.Println("l1 is nil")
+		return l2
+	}
+	if l2 == nil {
+		log.Println("l2 is nil")
+		return l1
+	}
+
+	var head = &ListNode{}
+	if l1.Val < l2.Val {
+		head = l1
+		log.Println("merge l1.Next l2", head)
+		head.Next = mergeTwoLists2(l1.Next, l2)
+		log.Println("merge l1.Next l2 end", head)
+	} else {
+		head = l2
+		log.Println("merge l1 l2.Next", head)
+		head.Next = mergeTwoLists2(l1, l2.Next)
+		log.Println("merge l1 l2.Next end", head)
+	}
+
+	return head
 }
 
 func (l *ListNode) Print() string {
