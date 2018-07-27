@@ -12,6 +12,7 @@ sample都是参考别人的解
 |lab0007|Reverse Integer|
 |lab0008|String to Integer (atoi)|
 |lab0009|Palindrome Number|
+|lab0013|Roman to Integer|
 |lab0014|Longest Common Prefix|
 |lab0020|Valid Parentheses|
 |lab0021|Merge Two Sorted Lists|
