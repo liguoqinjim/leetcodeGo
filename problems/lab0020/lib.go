@@ -26,3 +26,38 @@ func isValid(s string) bool { //这个解法用到了acsii值
 		return false
 	}
 }
+
+func isValid2(s string) bool {
+	var stack []byte
+	for i := 0; i < len(s); i++ {
+		c := s[i]
+		switch c {
+		case '(', '[', '{':
+			stack = append(stack, c)
+		case ')', ']', '}':
+			l := len(stack)
+			if l == 0 {
+				return false
+			}
+			v := stack[l-1]
+			stack = stack[:l-1]
+			if c == ')' && v != '(' {
+				return false
+			}
+
+			if c == ']' && v != '[' {
+				return false
+			}
+
+			if c == '}' && v != '{' {
+				return false
+			}
+		}
+	}
+
+	if len(stack) > 0 {
+		return false
+	}
+
+	return true
+}
