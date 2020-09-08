@@ -1,4 +1,4 @@
-# [Two Sum](https://leetcode-cn.com/problems/two-sum/)
+# [Two Sum](https://leetcode.com/problems/two-sum/)
 就是给你一个int数组和一个target，要找出数组里面哪两个数相加是等于target的。
 
 |方法|简介|说明|
