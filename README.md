@@ -20,6 +20,7 @@ sample都是参考别人的解
 |lab0020|Valid Parentheses|
 |lab0021|Merge Two Sorted Lists|
 |lab0026|Remove Duplicates from Sorted Array|
+|lab0028|Implement strStr()||
 |lab0035|Search Insert Position|
 
 ## Todo
