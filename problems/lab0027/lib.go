@@ -20,3 +20,16 @@ func RemoveElement(nums []int, val int) int {
 
 	return l
 }
+
+func RemoveElement2(nums []int, val int) int {
+	l := 0
+
+	for _, v := range nums {
+		if v != val {
+			nums[l] = v
+			l++
+		}
+	}
+
+	return l
+}

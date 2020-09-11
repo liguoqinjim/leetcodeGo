@@ -1,6 +1,8 @@
 package lab0027
 
-import "testing"
+import (
+	"testing"
+)
 
 var cases = []struct {
 	nums []int
@@ -13,9 +15,22 @@ var cases = []struct {
 
 func TestRemoveElement(t *testing.T) {
 	for _, c := range cases {
-		result := RemoveElement(c.nums, c.val)
+		nums := make([]int, 0)
+		nums = append(nums, c.nums...)
+		result := RemoveElement(nums, c.val)
 		if result != c.len {
 			t.Errorf("RemoveElement(%v,%d)=%d,want %d", c.nums, c.val, result, c.len)
+		}
+	}
+}
+
+func TestRemoveElement2(t *testing.T) {
+	for _, c := range cases {
+		nums := make([]int, 0)
+		nums = append(nums, c.nums...)
+		result := RemoveElement2(nums, c.val)
+		if result != c.len {
+			t.Errorf("RemoveElement2(%v,%d)=%d,want %d", c.nums, c.val, result, c.len)
 		}
 	}
 }
