@@ -23,6 +23,7 @@ sample都是参考别人的解
 |lab0027|Remove Element| |
 |lab0028|Implement strStr()||
 |lab0035|Search Insert Position|
+|lab0058|||
 
 ## Todo
 1. 这个库的代码要都写上测试用例
