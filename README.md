@@ -25,6 +25,7 @@ sample都是参考别人的解
 |lab0035|Search Insert Position|
 |lab0058|Length of Last Word| |
 |lab0066|Plus One| |
+|lab0067|Add Binary| |
 
 ## Todo
 1. 这个库的代码要都写上测试用例
