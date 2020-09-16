@@ -11,12 +11,12 @@ var cases = []struct {
 }{
 	{input: NewListNode([]int{1, 1, 2}), output: NewListNode([]int{1, 2})},
 	{input: NewListNode([]int{1, 1, 2, 3, 3}), output: NewListNode([]int{1, 2, 3})},
-	{input: nil, output: nil},
+	//{input: nil, output: nil}, //特例
 }
 
 func TestDeleteDuplicates(t *testing.T) {
 	for _, c := range cases {
-		i := append([]int{}, c.input.ToArray()...)
+		i := append([ ]int{}, c.input.ToArray()...)
 
 		result := DeleteDuplicates(NewListNode(i))
 		if !reflect.DeepEqual(result.ToArray(), c.output.ToArray()) {
