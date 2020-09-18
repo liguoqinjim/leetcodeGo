@@ -29,7 +29,8 @@ sample都是参考别人的解
 |lab0066|Plus One| |
 |lab0067|Add Binary| |
 |TODO_lab0069|Sqrt(x)| |
-|lab0083|Remove Duplicates from Sorted List||
+|lab0083|Remove Duplicates from Sorted List| |
+|lab0100|Same Tree| |
 
 ## Todo
 1. 这个库的代码要都写上测试用例
