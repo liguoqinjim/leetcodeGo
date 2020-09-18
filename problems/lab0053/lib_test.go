@@ -20,3 +20,12 @@ func TestMaxSubArray(t *testing.T) {
 		}
 	}
 }
+
+func TestMaxSubArray2(t *testing.T) {
+	for _, c := range cases {
+		result := MaxSubArray2(c.input)
+		if result != c.output {
+			t.Errorf("MaxSubArray2(%v)=%d,want %d", c.input, result, c.output)
+		}
+	}
+}
