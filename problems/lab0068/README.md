@@ -8,3 +8,4 @@
  
 ## 参考资料
  - https://yourbasic.org/golang/max-min-int-uint/#:~:text=Go%20has%20two%20predeclared%20integer,same%20size%20as%20a%20uint%20.
+ - https://leetcode-cn.com/problems/sqrtx/solution/x-de-ping-fang-gen-by-leetcode-solution/

@@ -28,7 +28,7 @@ sample都是参考别人的解
 |lab0058|Length of Last Word| |
 |lab0066|Plus One| |
 |lab0067|Add Binary| |
-|TODO_lab0069|Sqrt(x)| |
+|TODO_lab0068|Sqrt(x)| |
 |lab0083|Remove Duplicates from Sorted List| |
 |lab0100|Same Tree| |
 

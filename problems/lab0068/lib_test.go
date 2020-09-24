@@ -23,3 +23,21 @@ func TestMySqrt(t *testing.T) {
 		}
 	}
 }
+
+func TestMySqrt2(t *testing.T) {
+	for _, c := range cases {
+		result := MySqrt2(c.input)
+		if result != c.output {
+			t.Errorf("MySqrt2(%d)=%d,want %d", c.input, result, c.output)
+		}
+	}
+}
+
+func TestMySqrt3(t *testing.T) {
+	for _, c := range cases {
+		result := MySqrt3(c.input)
+		if result != c.output {
+			t.Errorf("MySqrt3(%d)=%d,want %d", c.input, result, c.output)
+		}
+	}
+}
